@@ -1,10 +1,21 @@
+import Container from 'Components/Container';
+import Navbar from 'Components/Navbar';
 import styled from 'styled-components';
 
-const PortfolioListingPage = () => <Title>Solid starting point!</Title>;
+const PortfolioListingPage = () => (
+  <Container>
+    <Navbar />
+    <div style={{ marginTop: 30 }}>
+      <Text>Welcome to crypto portfolio manager</Text>
+      <Text>Use search on the right to add coins to your portfolio</Text>
+    </div>
+  </Container>
+);
 
-const Title = styled.h1`
-  color: #525252;
-  font-size: 32px;
+const Text = styled.div`
+  font-family: sans-serif;
+  text-align: center;
+  font-size: x-large;
 `;
 
 export default PortfolioListingPage;
